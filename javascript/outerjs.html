@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .container{
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+
+<body id="change_all">
+<div class="container">
+
+ <h1>External JavaScript Advantages</h1>
+ <P>Placing scripts in external files has some advantages:</P>
+ <ul>
+   <li>It separates HTML and code</li>
+   <li>It makes HTML and JavaScript easier to read and maintain</li>
+   <li>Cached JavaScript files can speed up page loads</li>
+ </ul>
+
+
+
+  <p>To add several script files to one page  - use several script tags:
+    <br>
+    Example</p>
+
+
+  <h2>Demo JavaScript in Body</h2>
+
+  <p id="change_data">A Paragraph</p>
+
+  <button type="button" onclick="changeData()">Try it</button>
+
+
+  <button type="button" onclick="changeElement()">Try it to show number</button>
+
+    <p id="demo"></p>
+
+
+
+    <h2>js comments: </h2>
+
+    <p>// comment of JS </p>
+
+    <p>
+        /* Comment Start
+        <br>
+        ------
+        <br>
+        Comment end */
+
+    </p>
+
+    <script>
+        let x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+
+        document.getElementById("demo").innerHTML =
+            "The value of x is " + x + ".";
+    </script>
+
+
+</div>
+
+
+
+
+<script>
+  function changeData() {
+    document.getElementById("change_data").innerHTML = "Different Paragraph";
+  }
+
+  function changeElement() {
+      console.log(5 + 6);
+      window.alert(5 + 6);
+      document.write(5 + 6);
+  }
+</script>
+</body>
+</html>
