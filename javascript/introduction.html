@@ -14,11 +14,37 @@
 <div class="container">
     <h2>To change the inner value of a div</h2>
 
-    <p id="click_change">Click me to Show js</p>
-    <button type="button" onclick='document.getElementById("click_change").innerHTML = "Hello JavaScript!"'>
-        Click Me!
+    <p id="click_change"> oh ho so sad</p>
+    <button type="button" onclick='document.getElementById("click_change").innerHTML = "He He he "'>
+        Click Me to enjoy!
     </button>
+
+    <button type="button" onclick='document.getElementById("click_change").innerHTML = "oh ho so sad"'>
+        Click Me to sad!
+    </button>
+
     <p> <--|  "onclick='document.getElementById("ID_Name").innerHTML ="Changed Value"  |--></p>
+
+
+    <h2>In this case JavaScript changes the value of the src (source) attribute of an image.</h2>
+
+    <button onclick="document.getElementById('myImage').src='./assets/img/pic_bulbon.gif'">Turn on the light</button>
+
+    <img id="myImage" src="./assets/img/pic_bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='./assets/img/pic_bulboff.gif'">Turn off the light</button>
+
+    <p><--| onclick="document.getElementById('ID_NAME').src='URL'" |--></p>
+
+
+
+    <h2>To Effect on Css of a file</h2>
+
+    <p id="CSS_Efect">JavaScript can Effect on css</p>
+
+    <button type="button" onclick="document.getElementById('CSS_Efect').style.display='none'">Click Me to remove above line!</button>
+
+    <p><--|  onclick="document.getElementById('CSS_Efect').style.display='none'"  |--></p>
 
 </div>
 </body>
